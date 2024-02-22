@@ -1,11 +1,14 @@
 # Command to let script automatically run (without bash ...) 
 # chmod +x 2-19.sh
+
+# Help function
 Help(){
   echo " This porgram will count the perimeter "
   echo " of rectangle and put the result into the output.txt. "
   echo " Input numbers must be > 0. "
 }
 
+# Check flags
 while getopts ":h" option; do
    case $option in
       h) Help
